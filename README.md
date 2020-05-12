@@ -37,13 +37,13 @@ npm start
   "result": 0
 }
 ```
-  
+
 
 #  Como rodar os testes
 ```sh
 npm test
-```  
-  
+```
+
 
 #  Scripts
 
