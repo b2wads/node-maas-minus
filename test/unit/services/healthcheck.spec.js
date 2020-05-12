@@ -5,7 +5,11 @@ describe('HealthCheckService', () => {
     it("should return { stauts: 'ok' } ", async () => {
       const status = await HealthCheckService.status()
       expect(status).to.be.eql({
+<<<<<<< HEAD
         status: 'ok',
+=======
+        status: 'ok'
+>>>>>>> Initial commit
       })
     })
   })
