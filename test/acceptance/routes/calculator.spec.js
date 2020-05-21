@@ -6,7 +6,7 @@ const app = require('../../../app')
 describe('[ Acceptance ] Calculator routes', () => {
   context('POST /api/v1/calculator/minus', () => {
     const left = 100
-    const right = 100
+    const right = 200
 
     let res
 
@@ -19,7 +19,7 @@ describe('[ Acceptance ] Calculator routes', () => {
     })
 
     it('should return the sum', () => {
-      expect(res.body).to.be.eql({ result: 0 })
+      expect(res.body).to.be.eql({ result: -100 })
     })
   })
 })

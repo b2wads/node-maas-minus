@@ -1,5 +1,10 @@
 module.exports = {
   async minus(req, res) {
-    res.json({ result: 0 })
+    const { left, right } = req.body
+    const sum = left - right
+    const response = {
+      result: sum,
+    }
+    return res.status(200).json(response)
   },
 }
